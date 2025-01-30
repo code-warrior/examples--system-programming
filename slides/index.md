@@ -92,17 +92,30 @@ clean:
 
 ---
 
-## Style
+## Style (Indentation)
 
-* [NASA style guide](https://ntrs.nasa.gov/citations/19950022400)
-* NASA indents by 4, as does Harvard
-* NASA and Harvard place the first curly on the next line, Google does it inline, like many other modern languages
-* Variable names are separated by underscores
-* Line lengths: 80 overall, 100 max
+* NASA indents by 4
 * Harvard indents by 4
-* GNU indents by 2
-* The GNU C Library Reference Manual indents by 2 (https://www.gnu.org/prep/standards/html_node/Formatting.html)
-* The NASA style guide indents by 4 (https://ntrs.nasa.gov/citations/19950022400)
 * Google indents by 2
+* The GNU indents by 2
+* We’ll indent by 2
+
+---
+
+## Style (Miscellaneous)
+
+* NASA and Harvard place the first curly on the next line
+* Google does it inline, like many other modern languages
+* Variable names are separated by underscores
+* Line lengths should be 80 chars long, 100 max
+
+---
+
+## Style (Sources)
+
+* [Harvard’s CS50 C Style Guide](https://cs50.readthedocs.io/style/c/)
+* [NASA style guide](https://ntrs.nasa.gov/citations/19950022400)
+* [The GNU C Library Reference Manual](https://www.gnu.org/prep/standards/html_node/Formatting.html)
+* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 ---
