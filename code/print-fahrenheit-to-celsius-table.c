@@ -14,10 +14,10 @@ int main() {
   printf("-----------\n");
 
   while (fahr <= upper) {
-    celsius = 5 * (fahr-32) / 9; // Note that layout out the expression as
-                                 // (5/9) * (fahr-32) invokes integer
-                                 // truncation, leading to answers of “0” for
-                                 // each result
+    celsius = 5 * (fahr - 32) / 9; // Note that layout out the expression as
+                                   // (5/9) * (fahr-32) invokes integer
+                                   // truncation, leading to answers of “0” for
+                                   // each result
 
     printf("%d\t%d\n", fahr, celsius);
 
