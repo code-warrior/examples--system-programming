@@ -84,7 +84,7 @@ build:
 run:
 	$(OUTPUT_FILE)
 
-clean :
+clean:
 	rm -fr $(OUTPUT_FILE) $(OUTPUT_FILE).dSYM *~
 ```
 
