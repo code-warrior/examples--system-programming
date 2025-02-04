@@ -12,6 +12,15 @@
 *.map
 *.exp
 
+# Assembly C files
+*.s
+
+# Intermediate C files
+*.i
+
+## C bytecode
+*.bc
+
 # Precompiled Headers
 *.gch
 *.pch
