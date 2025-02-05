@@ -127,3 +127,15 @@ gcc -save-temps hello-world.c
 ```
 
 The `-save-temps` flag will save bytecode (`.bc`), intermediary (`.i`), object (`.o`), and Assembler (`.s`) files, each named after the original source file.
+
+---
+
+## More GCC (Only Check Syntax)
+
+```bash
+gcc -fsyntax-only hello-world.c
+```
+
+If you only want to check the syntax of your program without compiling and building, then use the `-fsyntax-only` flag.
+
+---
