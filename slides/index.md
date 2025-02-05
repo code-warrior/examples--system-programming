@@ -119,3 +119,11 @@ clean:
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 ---
+
+## More GCC (Save All Temp Files)
+
+```bash
+gcc -save-temps hello-world.c
+```
+
+The `-save-temps` flag will save bytecode (`.bc`), intermediary (`.i`), object (`.o`), and Assembler (`.s`) files, each named after the original source file.
