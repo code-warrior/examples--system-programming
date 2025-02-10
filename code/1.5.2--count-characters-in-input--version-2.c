@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-  double nc;
+  double number_of_characters;
 
   // Replace EOF wih '\n' to see this program work in your CLI
-  for (nc = 0; getchar() != EOF; ++nc)
+  for (number_of_characters = 0; getchar() != EOF; ++number_of_characters)
     ;
 
-  printf("%.0f\n", nc);
+  printf("Number of characters is %.0f\n", number_of_characters);
 
   return 0;
 }

@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-  long nc;
+  long number_of_characters;
 
-  nc = 0;
+  number_of_characters = 0;
 
   // Replace EOF wih '\n' to see this program work in your CLI
   while(getchar() != EOF)
-    ++nc;
+    ++number_of_characters;
 
-  printf("%ld\n", nc); // ld is a long integer
+  // The ld conversion specifier is a long integer
+  printf("Number of characters is %ld\n", number_of_characters);
 
   return 0;
 }
