@@ -12,6 +12,8 @@ int main(void) {
 
   state = OUTSIDE_A_WORD;
   number_of_lines = number_of_words = number_of_characters = 0;
+  // The above is equivalent to the following:
+  // number_of_lines = (number_of_words = (number_of_characters = 0));
 
   // Replace “EOF” with '\n'
   while((character = getchar()) != EOF) {
