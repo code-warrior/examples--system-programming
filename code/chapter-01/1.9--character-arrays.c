@@ -43,6 +43,11 @@ int get_line(char string[], int limit) {
   int character,
     length;
 
+  /*
+   * Before reading in a new character, it’s necessary to check that there’s
+   * enough room to store this new character in the array “string”, so the test
+   * “length < (limit - 1)” *must* be made first.
+   */
   for(length = 0; (length < (limit - 1)) && ((character = getchar()) != EOF && (character != '\n')); ++length) {
     string[length] = character;
   }
