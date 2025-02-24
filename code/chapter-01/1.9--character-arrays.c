@@ -25,7 +25,8 @@ int main(void) {
   }
 
   if(max > 0) {
-    printf("The longest string is %d chars long. The string is %s%s%s\n", max, RED, longest, RESET);
+    printf("The longest string is %d chars long. The string is %s%s%s\n",
+      max, RED, longest, RESET);
   }
 
   return 0;
