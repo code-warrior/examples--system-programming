@@ -114,3 +114,8 @@ $RECYCLE.BIN/
 
 # Ignore JetBrains‘s CLion’s .idea folder
 .idea/
+
+.clang-tidy
+CMakeLists.txt
+cmake-build-debug/
+
