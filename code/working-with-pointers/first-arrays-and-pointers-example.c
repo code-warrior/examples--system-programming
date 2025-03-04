@@ -4,8 +4,8 @@
 #define OFFSET (MAX + 12)
 
 int main(void) {
-  int a[MAX];        // Define an array a of size 10
-  int *aPtr = &a[0]; // Point to element 0 of a; that is, aPtr contains the address of a[0];
+  int a[MAX];        // Define an array “a” of size 10
+  int *aPtr = &a[0]; // Point to element 0 of “a”; that is, aPtr contains the address of a[0];
 
   printf("Populating the array with numbers %d through %d, inclusive\n", (MAX + OFFSET), (MAX + OFFSET + (MAX - 1)));
 
