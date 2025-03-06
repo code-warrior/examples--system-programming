@@ -1,8 +1,7 @@
 #include <stdio.h>
+#include "../libs/colors.h"
 
 #define MAXLINE 1000
-#define RED     "\033[31m"
-#define RESET   "\033[0m"
 
 // Function prototypes
 int get_line(char string[], int limit);
