@@ -5,7 +5,7 @@
 
 // Function prototypes
 int get_line(char string[], int limit);
-void copy(char to[], char from[]);
+void copy(char to[], const char from[]);
 
 int main(void) {
   int len;
@@ -69,10 +69,10 @@ int get_line(char string[], int limit) {
  * @param to A character array (string) to which a string will be copied
  * @param from A character array (string) from which a string will be copied
  */
-void copy(char to[], char from[]) {
   int i;
 
   i = 0;
+void copy(char to[], const char from[]) {
 
   while ((to[i] = from[i]) != '\0') {
     ++i;
