@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  float fahr, celsius;
-  float lower, upper, step;
-
-  lower = 0;
-  upper = 300;
-  step = 20;
+  float fahr,
+    lower = 0,
+    upper = 300,
+    step = 20;
+  double celsius;
 
   fahr = lower;
 
