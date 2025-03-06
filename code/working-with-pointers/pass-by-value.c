@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-#define RED   "\033[31m"
-#define RESET "\033[0m"
+#include "../libs/colors.h"
 
 int add_one_hundred(int x) {
   printf("The value of the automatic variable %sx%s is %s%d%s\n",

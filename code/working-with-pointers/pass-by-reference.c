@@ -1,8 +1,5 @@
 #include <stdio.h>
-
-#define RED    "\033[31m"
-#define YELLOW "\033[33m"
-#define RESET  "\033[0m"
+#include "../libs/colors.h"
 
 void add_one_to(int *x) {
   printf("Automatic pointer variable %sx%s is %s%d%s\n",
