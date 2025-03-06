@@ -73,6 +73,4 @@ void copy(char to[], const char from[]) {
   while ((to[i] = from[i]) != '\0') {
     ++i;
   }
-
-  return;
 }
