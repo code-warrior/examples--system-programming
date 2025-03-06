@@ -2,10 +2,10 @@
 #include "../libs/colors.h"
 
 void swap_by_reference(int *aPtr, int *bPtr) {
-  int temp = *aPtr;
+  const int TEMP = *aPtr;
 
   *aPtr = *bPtr;
-  *bPtr = temp;
+  *bPtr = TEMP;
 }
 
 int main(void) {
