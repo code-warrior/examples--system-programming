@@ -5,9 +5,7 @@
 #define STEP  20
 
 int main() {
-  int fahrenheit, celsius;
-
-  fahrenheit = LOWER;
+  int fahrenheit = LOWER, celsius;
 
   printf("F\tC\n");
   printf("-----------\n");
