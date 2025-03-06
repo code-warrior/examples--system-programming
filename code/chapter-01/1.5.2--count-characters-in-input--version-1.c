@@ -5,7 +5,7 @@ int main(void) {
 
   number_of_characters = 0;
 
-  // Replace EOF wih '\n' to see this program work in your CLI
+  // Type CNTRL + D to generate EOF
   while(getchar() != EOF)
     ++number_of_characters;
 
