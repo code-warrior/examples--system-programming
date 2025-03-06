@@ -9,11 +9,9 @@ void copy(char to[], const char from[]);
 
 int main(void) {
   int len;
-  int max;
   char line[MAXLINE];
   char longest[MAXLINE];
-
-  max = 0;
+  int max = 0;
 
   while((len = get_line(line, MAXLINE)) > 1) {
     if(len > max) {
@@ -69,10 +67,8 @@ int get_line(char string[], int limit) {
  * @param to A character array (string) to which a string will be copied
  * @param from A character array (string) from which a string will be copied
  */
-  int i;
-
-  i = 0;
 void copy(char to[], const char from[]) {
+  int i = 0;
 
   while ((to[i] = from[i]) != '\0') {
     ++i;
