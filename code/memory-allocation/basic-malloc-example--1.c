@@ -7,6 +7,12 @@ int main(void) {
                                                   // following:
                                                   // int *x = (int *) malloc(sizeof(int));
 
+  if (NULL == x) {                                // If no memory can be allocated, throw the error to the error stream,
+    fprintf(stderr, "Memory allocation failed\n");// then exit ❡
+
+    exit(EXIT_FAILURE);                           // The constant EXIT_FAILURE is 1 in most systems ❡
+  }
+
   *x = 10;                                        // Dereference the pointer in order to assign an integer ❡
 
   printf("Variable x is %d\n", *x);
