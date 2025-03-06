@@ -1,3 +1,5 @@
+#ifndef COLORS_H
+#define COLORS_H
 #define NORMAL        "\033[0m"
 #define RESET         NORMAL
 #define BLINK         "\033[5m"
@@ -41,3 +43,4 @@
 #define BGMAGENTA     "\033[45m"
 #define BGCYAN        "\033[46m"
 #define BGWHITE       "\033[47m"
+#endif
