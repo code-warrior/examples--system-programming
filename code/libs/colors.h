@@ -1,4 +1,5 @@
 #define NORMAL        "\033[0m"
+#define RESET         NORMAL
 #define BLINK         "\033[5m"
 #define BLUE          "\033[34m"
 #define MAGENTA       "\033[35m"
