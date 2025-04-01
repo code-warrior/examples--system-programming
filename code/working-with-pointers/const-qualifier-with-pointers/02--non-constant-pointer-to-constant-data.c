@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include "../../libs/colors.h"
 
-void printCharacters(char *sPtr);
+void printCharacters(const char *sPtr);
 
 int main(void) {
   char string[] = "Characters in a string";
@@ -20,7 +20,7 @@ int main(void) {
 // sPtr cannot be used to modify the character to which it points,
 // i.e., sPtr is a “read-only” pointer
 // Read right to left as, “sPtr is a pointer to a character constant”
-void printCharacters(char *sPtr) {
+void printCharacters(const char *sPtr) {
   for (; *sPtr != '\0'; ++sPtr) {
     printf("%c", *sPtr);
     // *sPtr = toupper(*sPtr); // Throws error, since sPtr is read-only
