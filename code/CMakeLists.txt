@@ -18,6 +18,7 @@ add_executable(c
         chapter-01/1.8--arguments--call-by-value.c
         chapter-01/1.9--character-arrays.c
         libs/colors.h
+        working-with-files/open-a-file.c
         working-with-pointers/first-arrays-and-pointers-example.c
         working-with-pointers/first-pointer-example.c
         working-with-pointers/pass-by-reference.c
