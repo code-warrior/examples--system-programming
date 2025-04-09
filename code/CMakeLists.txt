@@ -20,6 +20,7 @@ add_executable(c
         libs/colors.h
         working-with-files/open-a-file.c
         working-with-files/remove-a-file-or-folder.c
+        working-with-files/rename-a-file-or-folder.c
         working-with-pointers/first-arrays-and-pointers-example.c
         working-with-pointers/first-pointer-example.c
         working-with-pointers/pass-by-reference.c
