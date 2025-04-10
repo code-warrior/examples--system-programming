@@ -24,7 +24,8 @@ int main (void) {
 
     printf("%s\n", border);
   } else {
-    printf( "\n\tFile error or file does not exist.\n\tExiting... \n\n" );
+    printf("* File `%s` could not be opened. It may not exist, or you may not have permission to read it.\n\tExiting... \n\n",
+      filename);
 
     return -1;
   }
