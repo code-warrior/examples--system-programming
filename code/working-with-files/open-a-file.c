@@ -30,5 +30,11 @@ int main (void) {
   }
 
   // fclose() returns 0 on success
+  if (fclose(file) != 0) {
+    printf("* File error or file does not exist.\n\tExiting... \n\n");
+  } else {
+    printf("* File `%s` successfully closed.\n\n", filename);
+  }
+
   return 0;
 }
