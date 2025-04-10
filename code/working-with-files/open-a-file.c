@@ -3,7 +3,6 @@
 int main (void) {
   FILE *file;
   char *filename = "open-a-file.c"; // Try opening Apache’s access log: /var/log/apache2/access_log
-  const char * const border = "-------------------------------------------------------------------------------------";
 
   puts("");
 
@@ -14,6 +13,7 @@ int main (void) {
 
   // fopen returns 0 on success
   if ((file = fopen(filename, "r")) != NULL) {
+    const char * const border = "-------------------------------------------------------------------------------------";
     int character;
 
     printf("* File opened successfully\n");
