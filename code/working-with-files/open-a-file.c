@@ -5,19 +5,19 @@ int main (void) {
   char *filename = "open-a-file.c"; // Try opening Apache’s access log: /var/log/apache2/access_log
   const char * const border = "-------------------------------------------------------------------------------------";
 
+  puts("");
 
   printf("* The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
   printf("Attempting to open file `%s` in read only mode...\n",
     filename);
 
-  puts("");
-
   // fopen returns 0 on success
   if ((file = fopen(filename, "r")) != NULL) {
     int character;
 
     printf("%s\n", border);
+
     while ((character = fgetc(file)) != EOF) {
       printf("%c", character);
     }
@@ -28,6 +28,8 @@ int main (void) {
 
     return -1;
   }
+
+  puts("");
 
   // fclose() returns 0 on success
   return 0;
