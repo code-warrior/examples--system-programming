@@ -9,7 +9,7 @@ int main (void) {
 
   printf("* The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
-  printf("Attempting to open file `%s` in read only mode...\n",
+  printf("* Attempting to open file `%s` in read only mode...\n",
     filename);
 
   // fopen returns 0 on success
@@ -28,8 +28,6 @@ int main (void) {
 
     return -1;
   }
-
-  puts("");
 
   // fclose() returns 0 on success
   return 0;
