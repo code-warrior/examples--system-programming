@@ -5,7 +5,8 @@ int main (void) {
   char *filename = "open-a-file.c"; // Try opening Apache’s access log: /var/log/apache2/access_log
   const char * const border = "-------------------------------------------------------------------------------------";
 
-  printf("The maximum length of a filename on your machine is %d bytes\n",
+
+  printf("* The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
   printf("Attempting to open file `%s` in read only mode...\n",
     filename);
