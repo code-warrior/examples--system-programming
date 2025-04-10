@@ -3,6 +3,7 @@
 int main (void) {
   FILE *file;
   char *filename = "open-a-file.c"; // Try opening Apache’s access log: /var/log/apache2/access_log
+  const char * const border = "-------------------------------------------------------------------------------------";
 
   printf("The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
@@ -15,9 +16,12 @@ int main (void) {
   if ((file = fopen(filename, "r")) != NULL) {
     int character;
 
+    printf("%s\n", border);
     while ((character = fgetc(file)) != EOF) {
       printf("%c", character);
     }
+
+    printf("%s\n", border);
   } else {
     printf( "\n\tFile error or file does not exist.\n\tExiting... \n\n" );
 
