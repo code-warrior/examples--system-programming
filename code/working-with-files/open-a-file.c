@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main (void) {
-  char *filename = "open-a-file.c";
   FILE *file;
+  char *filename = "open-a-file.c"; // Try opening Apache’s access log: /var/log/apache2/access_log
 
   printf("The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
@@ -11,6 +11,7 @@ int main (void) {
 
   puts("");
 
+  // fopen returns 0 on success
   if ((file = fopen(filename, "r")) != NULL) {
     int character;
 
@@ -23,5 +24,6 @@ int main (void) {
     return -1;
   }
 
+  // fclose() returns 0 on success
   return 0;
 }
