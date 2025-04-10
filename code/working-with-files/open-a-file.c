@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main (void) {
-  FILE * file;
   char *filename = "open-a-file.c";
+  FILE *file;
 
   printf("The maximum length of a filename on your machine is %d bytes\n",
     FILENAME_MAX);
