@@ -16,6 +16,7 @@ int main (void) {
   if ((file = fopen(filename, "r")) != NULL) {
     int character;
 
+    printf("* File opened successfully\n");
     printf("%s\n", border);
 
     while ((character = fgetc(file)) != EOF) {
